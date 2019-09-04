@@ -5,33 +5,33 @@
 <a href="http://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-This is an adaption and modification of [Snille](https://github.com/Snille/MMM-Sonos) and [Vaggan's](https://github.com/Vaggan) [MagicMirror-SonosModule](https://github.com/Vaggan/MagicMirror-SonosModule) and [CFenner's](https://github.com/CFenner) [MagicMirror-SonosModule](https://github.com/CFenner/MagicMirror-Sonos-Module). It was modified to get some enhancements in visualisation an configuration. Also the module hides itself when not playing now.
+This is an adaption and modification of [Snille](https://github.com/Snille/MMM-Sonos) and [Vaggan's](https://github.com/Vaggan/MagicMirror-SonosModule) and [CFenner's](https://github.com/CFenner/MagicMirror-Sonos-Module). It was modified to get some enhancements in visualisation an configuration. Also the module hides itself when not playing now.
 
 Note from Snille: I'm new to the MagicMirror world and Node.js, this is my first attempt to modify a module. There are probably lot's of things that could have been done better. :)
 
 When starting the Mirror:
 
-![Sonos Module Loading](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Loading.png)
+![Sonos Module Loading](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Loading.png)
 
 Module on the Left side of the Mirror:
 
-![Sonos Module Left](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Left.png)
+![Sonos Module Left](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Left.png)
 
 Module in the Center of the Mirror:
 
-![Sonos Module Center](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Center.png)
+![Sonos Module Center](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Center.png)
 
 Module in the Center of the Mirror playing in 3 different zones:
 
-![Sonos Module Center](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Multizone.png)
+![Sonos Module Center](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Multizone.png)
 
 Module on the Right side of the Mirror:
 
-![Sonos Module Right](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Right.png)
+![Sonos Module Right](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Right.png)
 
 This is my own mirrors view (Top Center) using some addition in the custom.css [see below](#custom-css)
 
-![Sonos Module Custom CSS](https://github.com/Snille/MMM-Sonos/blob/master/.github/Sonos-Custom-CSS.png)
+![Sonos Module Custom CSS](https://github.com/flopp999/MMM-Sonos/blob/master/.github/Sonos-Custom-CSS.png)
 
 
 ## Usage
@@ -52,7 +52,7 @@ cd ~/MagicMirror/modules
 Clone this repository:
 
 ```
-git clone https://github.com/Snille/MMM-Sonos.git
+git clone https://github.com/flopp999/MMM-Sonos.git
 ```
 
 Add some [config entries](#configuration) to your config.js file. After that the content will be added to your mirror.
@@ -84,6 +84,7 @@ Here are the configuration options to configure the module.
 |`preArtistText`|Text to be displayed before the artist name.<br><br>**Default value:** `Artist: `|
 |`preTrackText`|Text to be displayed before the track name.<br><br>**Default value:** `Track: `|
 |`preTypeText`|Text to be displayed before the source name.<br><br>**Default value:** `Source: `|
+|`preStationText`|Text to be displayed before the station name.<br><br>**Default value:** `Station: `|
 |`animationSpeed`|Lenght of the fade animation.<br><br>**Default value:** `1000`|
 |`updateInterval`|Update interval.<br><br>**Default value:** `0.5`|
 |`apiBase`|http link to the SONOS API.<br><br>**Default value:** `http://localhost'`|
