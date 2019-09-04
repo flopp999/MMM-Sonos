@@ -78,9 +78,15 @@
 		}
 	},
 	renderRoom: function(state, pretype, type, preroom, roomName, preartist, artist, pretrack, track, cover) {
-		artist = artist?artist:"";
-		track = track?track:"";
-		cover = cover?cover:"";
+                if(type === 'radio'){
+                        var res = track.split("-");
+                        artist = res[0], track = res[1];
+                        cover = cover?cover:"";
+                }else{
+                        artist = artist?artist:"";
+                        track = track?track:"";
+                        cover = cover?cover:"";
+                }
 		var room = '';
 		// show room name if 'showRoomName' is set and PLAYING or 'showStoppedRoom' is set
 		if(this.config.showRoomName && (state === 'PLAYING' || this.config.showStoppedRoom)) {
