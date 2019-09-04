@@ -94,7 +94,7 @@ Here are the configuration options to configure the module.
 
 ### Custom-CSS
 
-Here is my CSS settings for the module that I have added to my custom.css to give it the exta special look. :)
+Here is Snille's CSS settings for the module that he have added to his custom.css to give it the exta special look. :)
 
 ```
 /* Sonos --------------------------------------------*/
