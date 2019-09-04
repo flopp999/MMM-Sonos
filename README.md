@@ -5,7 +5,7 @@
 <a href="http://choosealicense.com/licenses/mit"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
 </p>
 
-This is an adaption and modification of [Snille](https://github.com/Snille/MMM-Sonos) and [Vaggan's](https://github.com/Vaggan/MagicMirror-SonosModule) and [CFenner's](https://github.com/CFenner/MagicMirror-Sonos-Module). It was modified to get some enhancements in visualisation an configuration. Also the module hides itself when not playing now.
+This is an adaption and modification of [Snille's](https://github.com/Snille/MMM-Sonos) and [Vaggan's](https://github.com/Vaggan/MagicMirror-SonosModule) and [CFenner's](https://github.com/CFenner/MagicMirror-Sonos-Module). It was modified to get some enhancements in visualisation an configuration. Also the module hides itself when not playing now.
 
 Note from Snille: I'm new to the MagicMirror world and Node.js, this is my first attempt to modify a module. There are probably lot's of things that could have been done better. :)
 
