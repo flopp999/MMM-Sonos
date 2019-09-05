@@ -94,18 +94,21 @@
                 }
 
                 var room = '';
-                // if Sonos is in line_in mode, we want to hide the speaker
+
                 var isEmpty = (artist && artist.trim().length) == 0
                         && (track && track.trim().length) == 0
                         && (cover && cover.trim().length) == 0;
-         
+//              var isEmpty = true;
+
                 // show room name if 'showRoomName' is set and PLAYING or 'showStoppedRoom' is set
-                if(this.config.showRoomName && (state === 'PLAYING' || this.config.showStoppedRoom)) {
+                if(this.config.showRoomName && (state === 'PLAYING' || this.config.showStoppedRoom) && !isEmpty) {
                         room += this.html.room.format(preroom, roomName);
                 }
+                // if Sonos Playbar is in TV mode, no title is provided and therefore the room should not be displayed
 
                 // show song if PLAYING
                 if(state === 'PLAYING' && !isEmpty) {
+//              if(state === 'PLAYING' && !type === 'line_in') {
                         room += this.html.type.format(pretype, type.charAt(0).toUpperCase() + type.slice(1), prestation, stationname);
                         room += this.html.song.format(
                                 this.html.name.format(preartist, artist, pretrack, track)+
